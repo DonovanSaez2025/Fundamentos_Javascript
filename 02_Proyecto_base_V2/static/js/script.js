@@ -16,8 +16,8 @@ let pareja = null;
 const mesCumpleanios = "Octubre";
 
 // Funciones para mostrar cada valor con alert()
-function mostrarNumeroEntero() {
-  alert("Número entero: " + numeroEntero);
+function mostarViviendas() {
+  alert("Cantidad de viviendas: " + viviendas);
 }
 
 function mostrarNumeroDecimal() {

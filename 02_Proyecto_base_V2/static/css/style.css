@@ -11,11 +11,13 @@ body {
 
 .container {
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 900px;
+}
+
+.row {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 3px;
+    justify-content: center;
+    gap: 5px;
 }
 
 button {
