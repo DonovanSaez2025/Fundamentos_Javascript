@@ -1,2 +1,2 @@
 # Fundamentos_Javascript
-Proyecto de JavaScript
+Aquí aprenderemos de JavaScript mediante tareas y proyectos.
