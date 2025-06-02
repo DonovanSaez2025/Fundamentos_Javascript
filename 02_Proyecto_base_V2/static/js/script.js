@@ -1,13 +1,19 @@
 // Declaración de variables
-let numeroEntero = 25;
-let numeroDecimal = 3.14;
-let cadenaTexto = "Hola, mundo";
-let valorBooleano = true;
-let arregloNumeros = [1, 2, 3, 4];
-let objetoPersona = { nombre: "Ana", edad: 30 };
-let valorIndefinido;
-let valorNulo = null;
-const mes = "Junio";
+let viviendas = 1;
+let numeroEuler = 2.71828;
+let mascota = "junior";
+let enamorado = false;
+let coloresFavoritos = ["amarillo", "negro", "verde", "azul"];
+let usuario = {
+  nombre: "Donovan",
+  correo: "donovansaez@liceovvh.cl",
+  edad: 16,
+  notas: 6.4,
+  esEstudiante: true
+};
+let promedioFinal;
+let pareja = null;
+const mesCumpleanios = "Octubre";
 
 // Funciones para mostrar cada valor con alert()
 function mostrarNumeroEntero() {
@@ -45,4 +51,3 @@ function mostrarNulo() {
 function mostrarConstante() {
   alert("Constante mes: " + mes);
 }
-
