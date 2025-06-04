@@ -7,17 +7,12 @@
 
 body {
     text-align: center;
+    font-family: sans-serif;
 }
 
 .container {
     margin: 0 auto;
     max-width: 900px;
-}
-
-.row {
-    display: flex;
-    justify-content: center;
-    gap: 5px;
 }
 
 button {

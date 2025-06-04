@@ -1,23 +1,17 @@
 // Declaración de variables
-let viviendas = 1;
-let numeroEuler = 2.71828;
-let mascota = "junior";
-let enamorado = false;
-let coloresFavoritos = ["amarillo", "negro", "verde", "azul"];
-let usuario = {
-  nombre: "Donovan",
-  correo: "donovansaez@liceovvh.cl",
-  edad: 16,
-  notas: 6.4,
-  esEstudiante: true
-};
-let promedioFinal;
-let pareja = null;
-const mesCumpleanios = "Octubre";
+let numeroEntero = 25; // Numérico - INT
+let numeroDecimal = 3.14; // Décimal - FLOAT
+let cadenaTexto = "Hola, mundo"; // Texto - STRING 
+let valorBooleano = true; // verdadero/falso (1, 0) - BOOLEAN
+let arregloNumeros = [1, 2, 3, 4]; // Lista de elementos - ARRAY
+let objetoPersona = { nombre: "Ana", edad: 30 }; // Objeto clave: valor - OBJECT
+let valorIndefinido; // Sin valor asignado - UNDEFINED
+let valorNulo = null; // Valor nulo - NULL
+const mes = "Junio"; // variable constante - CONST
 
 // Funciones para mostrar cada valor con alert()
-function mostarViviendas() {
-  alert("Cantidad de viviendas: " + viviendas);
+function mostrarNumeroEntero() {
+  alert("Número entero: " + numeroEntero);
 }
 
 function mostrarNumeroDecimal() {
@@ -51,3 +45,4 @@ function mostrarNulo() {
 function mostrarConstante() {
   alert("Constante mes: " + mes);
 }
+
