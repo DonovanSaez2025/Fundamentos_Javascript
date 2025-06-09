@@ -1,5 +1,4 @@
 // Ejemplos de string
-
 function usarString() {
     // Variable tipo texto que permite ingresar cualquier nombre
     let nombre = prompt("Ingrese su nombre: ");
@@ -15,7 +14,7 @@ function usarString() {
 
 // Tarea: Imprimir segunda letra y penúltima de el apellido
 function manipularApellido() {
-    // Variableq ue permite ingresar cualquier apellido
+    // Variable que permite ingresar cualquier apellido
     let apellido = prompt("Ingrese su apellido: ");
     // Obtenemos la letra que está en la posición 1 en la variable apellido
     let segundaLetraApellido = apellido[1];
