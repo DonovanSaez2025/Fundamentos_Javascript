@@ -18,36 +18,36 @@ const mesCumpleanios = "Octubre";
 // Funciones para mostrar cada valor con alert()
 function mostarViviendas() {
   alert("Cantidad de viviendas: " + viviendas);
-}
+};
 
 function mostrarValorEuler() {
   alert("Número Euler: " + numeroEuler);
-}
+};
 
 function mostrarMascota() {
   alert("Nombre de la mascota: " + mascota);
-}
+};
 
 function mostrarEstadoAmoroso() {
   alert("Estado amoroso: " + enamorado);
-}
+};
 
 function mostrarColores() {
   alert("Colores favoritos: " + coloresFavoritos);
-}
+};
 
 function mostrarUsuario() {
   alert("Usuario: " + JSON.stringify(usuario));
-}
+};
 
 function mostrarPromedioFinal() {
   alert("Promedio final: " + promedioFinal);
-}
+};
 
 function mostrarPareja() {
   alert("Pareja: " + pareja);
-}
+};
 
 function mostrarMesNacimiento() {
   alert("Mes de nacimiento: " + mesCumpleanios);
-}
+};

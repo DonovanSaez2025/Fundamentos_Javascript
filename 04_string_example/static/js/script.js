@@ -10,7 +10,7 @@ function usarString() {
     alert("Primera letra del nombre es: " + primeraLetraNombre +
         "\nÚltima letra es: " + ultimaLetraNombre
     );
-}
+};
 
 // Tarea: Imprimir segunda letra y penúltima de el apellido
 function manipularApellido() {
@@ -24,4 +24,4 @@ function manipularApellido() {
     alert("Segunda letra del apellido es: " + segundaLetraApellido +
         "\nPenúltima letra del apellido es: " + penultimaLetraApellido
     );
-}
+};

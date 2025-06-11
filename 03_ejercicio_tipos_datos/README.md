@@ -9,4 +9,4 @@ Aquí nos enviará una alerta con cada tipo de dato de JavaScript mediando la pu
 El desafío consta de modificar cada variable y función además de añadir estilo a los botones.
 
 ## Importante
-Si deseas apoyarme contáctame
+Si deseas apoyarme contáctame.

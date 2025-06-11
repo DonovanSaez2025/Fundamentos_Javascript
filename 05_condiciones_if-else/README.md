@@ -1,11 +1,11 @@
-# Tipos de datos
+# Condiciones IF-ELSE
 
 **Autor**: donovansaez@liceovvh.cl
 
 Donovan Sáez
 
 ## Descripción
-Mediante botones veremos los distintos tipos de datos y su valor de ejemplo
+Haremos distintos ejercicios para ejercitar la condición IF-ELSE / IF - ELSE IF - ELSE.
 
 ## Importante
 Si deseas apoyarme contáctame.

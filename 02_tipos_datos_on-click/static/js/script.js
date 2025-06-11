@@ -12,37 +12,37 @@ const mes = "Junio"; // variable constante - CONST
 // Funciones para mostrar cada valor con alert()
 function mostrarNumeroEntero() {
   alert("Número entero: " + numeroEntero);
-}
+};
 
 function mostrarNumeroDecimal() {
   alert("Número decimal: " + numeroDecimal);
-}
+};
 
 function mostrarCadenaTexto() {
   alert("Cadena de texto: " + cadenaTexto);
-}
+};
 
 function mostrarBooleano() {
   alert("Valor booleano: " + valorBooleano);
-}
+};
 
 function mostrarArreglo() {
   alert("Arreglo de números: " + arregloNumeros);
-}
+};
 
 function mostrarObjeto() {
   alert("Objeto persona: " + JSON.stringify(objetoPersona));
-}
+};
 
 function mostrarIndefinido() {
   alert("Valor indefinido: " + valorIndefinido);
-}
+};
 
 function mostrarNulo() {
   alert("Valor nulo: " + valorNulo);
-}
+};
 
 function mostrarConstante() {
   alert("Constante mes: " + mes);
-}
+};
 
