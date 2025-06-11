@@ -12,7 +12,7 @@ function edadVotar() {
     // Condición IF - ELSE IF - ELSE
     if (edad >= 18) {
         alert("Su edad de " + edad + " años está aprobada para votar.");
-    } else if (edad >= 0 && edad < 18) { // && Compuerta AND
+    } else if (edad > 0 && edad < 18) { // && Compuerta AND
         alert("Su edad de " + edad + " años no está aprobada para votar.");
     } else {
         alert("Ingrese un valor válido.");
@@ -49,7 +49,7 @@ function verificarParImpar() {
     // Condición IF - ELSE IF - ELSE
     if (num % 2 == 0) {
         alert("El número es par");
-    } else if (num < 0 || num > 0) {
+    } else if ( num > 0) { // || Compuerta OR
         alert("El número es impar");
     } else {
         alert("Ingrese un valor numérico válido");
@@ -89,11 +89,11 @@ function compararNumeros() {
     let num2 = parseInt(prompt("Ingrese otro número: "));
     // Condición IF - ELSE IF - ELSE IF - ELSE
     if (num1 > num2) {
-        alert("El número 1 es mayor que el número 2");
+        alert("El número " + num1 + " es mayor que el número " + num2);
     } else if (num1 < num2) {
-        alert("El número 2 es mayor que el número 1");
+        alert("El número " + num1 + " es menor que el número " + num2);
     } else if (num1 == num2) {
-        alert("Ambos números son iguales");
+        alert("El número " + num1 + " es igual que el número " + num2);
     } else {
         alert("Ingrese números válidos");
     };
@@ -110,10 +110,10 @@ function aprobarCalificacion() {
     // Condición IF - ELSE IF - ELSE
     if (nota >= 4) {
         alert("Aprobado");
-    } else if (nota < 4) {
+    } else if (nota < 4 && nota > 0) {
         alert("Reprobado");
     } else {
-        alert("Ingrese un valor válido");
+        alert("Ingrese una nota válida");
     };
 };
 
@@ -143,11 +143,52 @@ function verificarUsername() {
 
 function letraMayuscula() {
     // Input string
-    let texto = prompt("Ingresa un texto: ");
+    let texto = prompt("Ingresa una palabra: ");
     // Condición IF - ELSE IF - ELSE
     if (texto[0] == "A") {
-        alert("El texto empieza con la letra A");
+        alert("La palabra empieza con la letra A");
     } else {
-        alert("El texto no empieza con la letra A");
+        alert("La palabra no empieza con la letra A mayúscula");
+    };
+};
+
+
+// Ejercicio 9
+/* Precio con descuento
+ Solicita el precio de un producto. 
+ Si el precio es mayor a 10000, muestra que aplica descuento. 
+ Si no, indica precio normal. */
+
+function descuentoPrecio() {
+    // Input conversión string a número
+    let precio = parseInt(prompt("Ingresa el precio total: "));
+    // Condición IF - ELSE IF - ELSE
+    if (precio > 10000) {
+        alert("Se aplicará el descuento");
+    } else if (precio <= 10000 && precio > 0) {
+        alert("No se aplicará descuento");
+    } else {
+        alert("Ingrese un precio válido");
+    };
+};
+
+// Ejercicio 10
+/* Verificar si una persona puede conducir
+ Solicita la edad del usuario y si tiene licencia (por ejemplo, respondiendo "sí" o "no").
+ Si tiene 18 o más y respondió que tiene licencia, muestra “Puede conducir”. 
+ Si no, muestra “No puede conducir”. */
+
+function licenciaEdad() {
+    // Input conversión string a número
+    let edad = parseInt(prompt("Ingrese su edad: "));
+    // Input string
+    let licencia = prompt('¿Tienes licencia de conducir? (Ingresa "si" o "no" sin mayúsculas ni espacios)');
+    // Condición IF - ELSE IF - ELSE
+    if (edad >= 18 && licencia == "si") {
+        alert("Usted puede conducir.");
+    } else if (edad < 18 && edad > 0 || licencia == "no") {
+        alert("Usted no puede conducir.");
+    } else {
+        alert("Ingrese valores válidos.");
     };
 };

@@ -5,7 +5,7 @@
 Donovan Sáez
 
 ## Descripción
-Haremos distintos ejercicios para ejercitar la condición IF-ELSE / IF - ELSE IF - ELSE.
+Haremos 10 distintos ejercicios para aprender a usar la condición IF-ELSE / IF - ELSE IF - ELSE.
 
 ## Importante
 Si deseas apoyarme contáctame.
