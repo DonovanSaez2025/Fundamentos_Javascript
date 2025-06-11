@@ -186,7 +186,7 @@ function licenciaEdad() {
     // Condición IF - ELSE IF - ELSE
     if (edad >= 18 && licencia == "si") {
         alert("Usted puede conducir.");
-    } else if (edad < 18 && edad > 0 || licencia == "no") {
+    } else if (edad < 18 && edad > 0 && licencia == "no") {
         alert("Usted no puede conducir.");
     } else {
         alert("Ingrese valores válidos.");
