@@ -108,7 +108,7 @@ function aprobarCalificacion() {
     // Input conversión string a número
     let nota = parseInt(prompt("Ingrese su nota: "));
     // Condición IF - ELSE IF - ELSE
-    if (nota >= 4) {
+    if (nota >= 4 && nota <= 7) {
         alert("Aprobado");
     } else if (nota < 4 && nota > 0) {
         alert("Reprobado");
