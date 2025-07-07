@@ -161,12 +161,18 @@ function letraMayuscula() {
 
 function descuentoPrecio() {
     // Input conversión string a número
-    let precio = parseInt(prompt("Ingresa el precio total: "));
+    let descuento = parseFloat(prompt("Ingrese el valor de descuento: Ejemplo: 20%"))
+    descuento /= 100;
+    let iva = 0.19;
+    let precio = parseFloat(prompt("Ingresa el precio total: "));
     // Condición IF - ELSE IF - ELSE
     if (precio > 10000) {
-        alert("Se aplicará el descuento");
+        alert(`El precio es de: ${precio}\n
+            IVA: ${precio * iva}\n
+            Precio total: ${precio * 1.19}
+        `);
     } else if (precio <= 10000 && precio > 0) {
-        alert("No se aplicará descuento");
+        
     } else {
         alert("Ingrese un precio válido");
     };
