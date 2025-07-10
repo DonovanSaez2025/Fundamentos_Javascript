@@ -49,7 +49,7 @@ function verificarParImpar() {
     // Condición IF - ELSE IF - ELSE
     if (num % 2 == 0) {
         alert("El número es par");
-    } else if ( num > 0) { // || Compuerta OR
+    } else if (num > 0) { // || Compuerta OR
         alert("El número es impar");
     } else {
         alert("Ingrese un valor numérico válido");
@@ -159,23 +159,20 @@ function letraMayuscula() {
  Si el precio es mayor a 10000, muestra que aplica descuento. 
  Si no, indica precio normal. */
 
-function descuentoPrecio() {
-    // Input conversión string a número
-    let descuento = parseFloat(prompt("Ingrese el valor de descuento: Ejemplo: 20%"))
-    descuento /= 100;
+function precio() { // Creación de la función
+    //Añadir un porcentaje de descuento e IVA y mostrar.
     let iva = 0.19;
-    let precio = parseFloat(prompt("Ingresa el precio total: "));
-    // Condición IF - ELSE IF - ELSE
+    let descuento = parseFloat(prompt("Ingrese el valor de descuento: Ejemplo 20"));
+    descuento /= 100; // operación para llevar a decimal
+    let precio = parseFloat(prompt("Ingrese el precio del producto"));
     if (precio > 10000) {
-        alert(`El precio es de: ${precio}\n
-            IVA: ${precio * iva}\n
-            Precio total: ${precio * 1.19}
-        `);
-    } else if (precio <= 10000 && precio > 0) {
-        
+        alert(`El valor ingresado fue: ${precio}\n
+          IVA: ${precio * iva}\n
+          Precio Total:${precio * 1.19}\n
+          `);
     } else {
-        alert("Ingrese un precio válido");
-    };
+        alert("Precio normal");
+    }
 };
 
 // Ejercicio 10
