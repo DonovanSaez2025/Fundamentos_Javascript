@@ -161,7 +161,7 @@ function letraMayuscula() {
 
 function precio() { // Creación de la función
     //Añadir un porcentaje de descuento e IVA y mostrar.
-    let iva = 0.19;
+    const  iva = 0.19;
     let descuento = parseFloat(prompt("Ingrese el valor de descuento: Ejemplo 20"));
     descuento /= 100; // operación para llevar a decimal
     let precio = parseFloat(prompt("Ingrese el precio del producto"));
