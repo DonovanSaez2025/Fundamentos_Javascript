@@ -12,7 +12,7 @@ function longitudDosPalabras() {
     let pal2 = prompt("Ingrese otra palabra");
     // Condición IF - ELSE IF - ELSE
     if (pal1 == "" && pal2 == "") {
-        alert("Ingrese algún valor para trabajar...")
+        alert("Ingrese algún valor para trabajar...");
     } else if (pal1.length > pal2.length) {
         alert(`
                 Primera palabra: ${pal1.length}\n
@@ -38,7 +38,13 @@ function longitudDosPalabras() {
  Si el correo no contiene ningún @ dirá que es inválido. */
 
 function validarEmail() {
+    let email = prompt("Ingrese su email: ");
 
+    if (email.includes("@") && email.includes(".") && email.length > 12){
+        alert(`${email} es un correo válido`);
+    } else {
+        alert(`${email} es un correo inválido`);
+    };
 };
 
 // Ejercicio 13
@@ -47,13 +53,14 @@ function validarEmail() {
 
 function negativoPositivo() {
     let num = parseInt(prompt("Ingrese un número: "));
+
     if (num < 0) {
-        alert(`${num} es un número negativo`)
+        alert(`${num} es un número negativo`);
     } else if (num >= 0) {
-        alert(`${num} es un número positivo`)
+        alert(`${num} es un número positivo`);
     } else {
-        alert("Ingrese valores válidos.")
-    }
+        alert("Ingrese valores válidos.");
+    };
 };
 
 // Ejercicio 14
@@ -63,14 +70,30 @@ function negativoPositivo() {
  Si es entre las 12 y las 18 dirá "Buenas tardes" */
 
 function saludoHora() {
+    let hora = parseInt(prompt("Ingrese la hora actual (sin minuto)"));
 
+    if (hora >= 7 && hora <= 11) {
+        alert("Buenos días");
+    } else if (hora >= 12 && hora <= 18) {
+        alert("Buenas tardes");
+    } else if (hora >= 19 && hora <= 23 || hora >= 0 && hora <= 6) {
+        alert("Buenas noches");
+    } else {
+        alert("Ingrese valores válidos");
+    };
 };
 
 // Ejercicio 15
-/* Verifica si una palabra contiene la letra e
+/* Verifica si una palabra contiene la letra e minúscula
  Solicita una palabra al usuario.
- Compara ambos y muestra cuál es mayor o si son iguales. */
+ Verificar si la palabra contiene la letra e minúscula. */
 
-function compararNumeros() {
+function verificarLetraE() {
+    let palabra = prompt("Ingrese una palabra");
 
+    if (palabra.includes("e")) {
+        alert(`La palabra ${palabra} incluye la letra e minúscula`);
+    } else {
+        alert(`La palabra ${palabra} no contiene la letra e minúscula`);
+    }
 };
