@@ -40,7 +40,7 @@ function longitudDosPalabras() {
 function validarEmail() {
     let email = prompt("Ingrese su email: ");
 
-    if (email.includes("@") && email.includes(".") && email.length > 12){
+    if (email.includes("@") && email.includes(".") && email.length >= 10){
         alert(`${email} es un correo válido`);
     } else {
         alert(`${email} es un correo inválido`);
