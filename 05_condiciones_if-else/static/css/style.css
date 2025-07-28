@@ -10,9 +10,11 @@ body {
     background-color: #140000;
     color: #e0e5ff;
     text-align: center;
-    margin: 8px;
 }
 
+nav {
+    margin-top: 8px;
+}
 
 .container {
     max-width: 1200px;
