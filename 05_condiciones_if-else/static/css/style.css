@@ -13,14 +13,41 @@ body {
     margin: 8px;
 }
 
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 25px;
+}
+
+.text-short {
+    flex: 1;
+}
+
+.text-long {
+    flex: 2;
+}
+
 p {
     margin: 8px;
 }
 
 button {
-    background-color: #660000;  
+    background-color: #660000;
     color: #e0fff6;
     padding: 5px 10px;
     border: 2px solid #fff;
     border-radius: 40px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #006600;
 }

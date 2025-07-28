@@ -161,7 +161,7 @@ function letraMayuscula() {
 
 function precio() { // Creación de la función
     //Añadir un porcentaje de descuento e IVA y mostrar.
-    const  iva = 0.19;
+    const iva = 0.19;
     let descuento = parseFloat(prompt("Ingrese el valor de descuento: Ejemplo 20"));
     descuento /= 100; // operación para llevar a decimal
     let precio = parseFloat(prompt("Ingrese el precio del producto"));
@@ -185,18 +185,120 @@ function licenciaEdad() {
     // Input conversión string a número
     let edad = parseInt(prompt("Ingrese su edad: "));
     // Condición IF - ELSE IF - ELSE
-    if (edad >=18 && edad < 100) {
+    if (edad >= 18 && edad < 100) {
         // Input string
         let licencia = prompt('¿Tienes licencia de conducir? (Ingresa "si" o "no" sin mayúsculas ni espacios)');
         // Anidamiento IF
         if (licencia == "si") {
             alert("Usted puede conducir.");
-        } else if (licencia == "no"){
+        } else if (licencia == "no") {
             alert("No puede conducir.")
         } else {
             alert("Ingrese valores válidos.")
         }
     } else {
         alert("Ingrese valores válidos.");
+    };
+};
+
+// Ejercicio 11
+/* Comparar longitud de dos palabras
+ Solicita dos palabras mediante prompt().
+ Muestra con alert() cuantas letras tiene cada palabra y cual tiene más. */
+
+function longitudDosPalabras() {
+    // Pedir dos palabras al usuario.
+    let pal1 = prompt("Ingrese una palabra");
+    let pal2 = prompt("Ingrese otra palabra");
+    // Condición IF - ELSE IF - ELSE
+    if (pal1 == "" && pal2 == "") {
+        alert("Ingrese algún valor para trabajar...");
+    } else if (pal1.length > pal2.length) {
+        alert(`
+                Primera palabra: ${pal1.length}\n
+                Segunda palabra: ${pal2.length}\n
+                La primera palabra es más larga que la segunda.`);
+    } else if (pal1.length < pal2.length) {
+        alert(`
+                Primera palabra: ${pal1.length}\n
+                Segunda palabra: ${pal2.length}\n
+                La segunda palabra es más larga que la primera.`);
+    } else {
+        alert(`
+            Cantidad de letras de la primera palabra: ${pal1.length}\n
+            Cantidad de letras de la segunda palabra: ${pal2.length}\n
+            Ambas palabras tienen la misma cantidad de letras.`);
+    };
+};
+
+// Ejercicio 12
+/* Email válido
+ Pide un correo electrónico con prompt().
+ Si el correo contiene un @ dirá que es un correo válido
+ Si el correo no contiene ningún @ dirá que es inválido. */
+
+function validarEmail() {
+    let email = prompt("Ingrese su email: ");
+
+    if (email.includes("@") && email.includes(".") && email.length >= 10) {
+        alert(`${email} es un correo válido`);
+    } else {
+        alert(`${email} es un correo inválido`);
+    };
+};
+
+// Ejercicio 13
+/* Verificar positivo o negativo
+ Pide un número al usuario y muestra si es positivo o negativo. */
+
+function negativoPositivo() {
+    // Ingresar el número
+    let num = parseInt(prompt("Ingrese un número: "));
+    // Condicional IF-ELSE IF-ELSE IF-ELSE
+    if (num < 0) {
+        alert(`${num} es un número negativo`);
+    } else if (num === 0) {
+        alert(`${num} es un número inválido`);
+    } else if (num >= 0) {
+        alert(`${num} es un número positivo`);
+    } else {
+        alert("Ingrese valores válidos.");
+    };
+};
+
+// Ejercicio 14
+/* Saludo personalizado según hora
+ Te pide la hora actual en el formato de 24 horas).
+ Si es antes de las 12, dirá "Buenos días".
+ Si es entre las 12 y las 18 dirá "Buenas tardes" */
+
+function saludoHora() {
+    // Ingresar la hora
+    let hora = parseInt(prompt("Ingrese la hora actual (sin minuto)"));
+    // Condicional IF-ELSE IF-ELSE IF-ELSE
+    if (hora >= 7 && hora <= 11) {
+        alert(`Buenos días, son las ${hora} horas`);
+    } else if (hora >= 12 && hora <= 18) {
+        alert(`Buenas tardes, son las ${hora} horas`);
+    } else if (hora >= 19 && hora <= 23 || hora >= 0 && hora <= 6) {
+        alert(`Buenas noches, son las ${hora} horas, que sueño`);
+    } else {
+        alert("Ingrese valores válidos");
+    };
+};
+
+// Ejercicio 15
+/* Verifica si una palabra contiene la letra e minúscula
+ Solicita una palabra al usuario.
+ Verificar si la palabra contiene la letra e minúscula. */
+
+function verificarLetraE() {
+    // Ingresar una palabra
+    let palabra = prompt("Ingrese una palabra");
+    // Condicional IF-ELSE
+    if (palabra.includes("e")) {
+        alert(`La palabra ${palabra} incluye la letra e minúscula`);
+    } else {
+        alert(`La palabra ${palabra} no contiene la letra e minúscula`);
     };
 };

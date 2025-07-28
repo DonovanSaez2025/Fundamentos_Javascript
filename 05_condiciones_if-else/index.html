@@ -4,34 +4,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilos CSS -->
     <link rel="stylesheet" href="static/css/style.css">
-    <title>Condición if-else</title>
+    <title>Condiciones if-else</title>
 </head>
 
 <body>
-    <main>
+    <!-- Contenedor -->
+    <div class="container">
         <h1>Uso de condiciones</h1>
-        <p>Ejercicio n°1</p>
-        <button onclick="edadVotar()">Aprobar edad para votar</button>
-        <p>Ejercicio n°2</p>
-        <button onclick="validarContrasena()">Válidar contraseña</button>
-        <p>Ejercicio n°3</p>
-        <button onclick="verificarParImpar()">Verificar número par o impar</button>
-        <p>Ejercicio n°4</p>
-        <button onclick="medirTemperatura()">Medir la temperatura</button>
-        <p>Ejercicio n°5</p>
-        <button onclick="compararNumeros()">Comparar cual número es mayor</button>
-        <p>Ejercicio n°6</p>
-        <button onclick="aprobarCalificacion()">Aprobar calificación</button>
-        <p>Ejercicio n°7</p>
-        <button onclick="verificarUsername()">Verificar el nombre de Usuario</button>
-        <p>Ejercicio n°8</p>
-        <button onclick="letraMayuscula()">Confirmar letra A</button>
-        <p>Ejercicio n°9</p>
-        <button onclick="descuentoPrecio()">Comprobar si se aplica descuento</button>
-        <p>Ejercicio n°10</p>
-        <button onclick="licenciaEdad()">Comprobar si puedes conducir</button>
-    </main>
+        <!-- Fila 1 -->
+        <div class="row">
+            <div>
+                <p>Ejercicio n°1</p>
+                <button onclick="edadVotar()" class="text-long">Aprobar edad para votar</button>
+            </div>
+            <div>
+                <p>Ejercicio n°2</p>
+                <button onclick="validarContrasena()" class="text-short">Válidar contraseña</button>
+            </div>
+            <div>
+                <p>Ejercicio n°3</p>
+                <button onclick="verificarParImpar()" class="text-long">Verificar número par o impar</button>
+            </div>
+            <div>
+                <p>Ejercicio n°4</p>
+                <button onclick="medirTemperatura()" class="text-short">Medir la temperatura</button>
+            </div>
+            <div>
+                <p>Ejercicio n°5</p>
+                <button onclick="compararNumeros()" class="text-long">Comparar cual número es mayor</button>
+            </div>
+        </div>
+        <!-- Fila 2 -->
+        <div class="row">
+            <div>
+                <p>Ejercicio n°6</p>
+                <button onclick="aprobarCalificacion()" class="text-short">Aprobar calificación</button>
+            </div>
+            <div>
+                <p>Ejercicio n°7</p>
+                <button onclick="verificarUsername()" class="text-long">Verificar el nombre de Usuario</button>
+            </div>
+            <div>
+                <p>Ejercicio n°8</p>
+                <button onclick="letraMayuscula()" class="text-short">Confirmar letra A</button>
+            </div>
+            <div>
+                <p>Ejercicio n°9</p>
+                <button onclick="descuentoPrecio()" class="text-long">Comprobar si se aplica descuento</button>
+            </div>
+            <div>
+                <p>Ejercicio n°10</p>
+                <button onclick="licenciaEdad()" class="text-long">Comprobar si puedes conducir</button>
+            </div>
+        </div>
+        <!-- Fila 3 -->
+        <div class="row">
+            <div>
+                <p>Ejercicio n°11</p>
+                <button onclick="longitudDosPalabras()" class="text-long">Comparar longitud de dos palabra.</button>
+            </div>
+            <div>
+                <p>Ejercicio n°12</p>
+                <button onclick="validarEmail()" class="text-short">Válidar Email.</button>
+            </div>
+            <div>
+                <p>Ejercicio n°13</p>
+                <button onclick="negativoPositivo()" class="text-long">Número negativo o positivo.</button>
+            </div>
+            <div>
+                <p>Ejercicio n°14</p>
+                <button onclick="saludoHora()" class="text-short">Saludo según la hora.</button>
+            </div>
+            <div>
+                <p>Ejercicio n°15</p>
+                <button onclick="verificarLetraE()" class="text-short">Verificar letra E.</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script JS -->
     <script src="static/js/script.js"></script>
 </body>
 
