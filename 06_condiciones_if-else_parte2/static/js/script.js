@@ -40,7 +40,7 @@ function longitudDosPalabras() {
 function validarEmail() {
     let email = prompt("Ingrese su email: ");
 
-    if (email.includes("@") && email.includes(".") && email.length >= 10){
+    if (email.includes("@") && email.includes(".") && email.length >= 10) {
         alert(`${email} es un correo válido`);
     } else {
         alert(`${email} es un correo inválido`);
@@ -52,10 +52,13 @@ function validarEmail() {
  Pide un número al usuario y muestra si es positivo o negativo. */
 
 function negativoPositivo() {
+    // Ingresar el número
     let num = parseInt(prompt("Ingrese un número: "));
-
+    // Condicional IF-ELSE IF-ELSE IF-ELSE
     if (num < 0) {
         alert(`${num} es un número negativo`);
+    } else if (num === 0) {
+        alert(`${num} no tiene signo`);
     } else if (num >= 0) {
         alert(`${num} es un número positivo`);
     } else {
@@ -70,8 +73,9 @@ function negativoPositivo() {
  Si es entre las 12 y las 18 dirá "Buenas tardes" */
 
 function saludoHora() {
+    // Ingresar la hora
     let hora = parseInt(prompt("Ingrese la hora actual (sin minuto)"));
-
+    // Condicional IF-ELSE IF-ELSE IF-ELSE
     if (hora >= 7 && hora <= 11) {
         alert("Buenos días");
     } else if (hora >= 12 && hora <= 18) {
@@ -89,11 +93,12 @@ function saludoHora() {
  Verificar si la palabra contiene la letra e minúscula. */
 
 function verificarLetraE() {
+    // Ingresar una palabra
     let palabra = prompt("Ingrese una palabra");
-
+    // Condicional IF-ELSE
     if (palabra.includes("e")) {
         alert(`La palabra ${palabra} incluye la letra e minúscula`);
     } else {
         alert(`La palabra ${palabra} no contiene la letra e minúscula`);
-    }
+    };
 };
