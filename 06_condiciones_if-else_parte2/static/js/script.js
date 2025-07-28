@@ -58,7 +58,7 @@ function negativoPositivo() {
     if (num < 0) {
         alert(`${num} es un número negativo`);
     } else if (num === 0) {
-        alert(`${num} no tiene signo`);
+        alert(`${num} es un número inválido`);
     } else if (num >= 0) {
         alert(`${num} es un número positivo`);
     } else {
