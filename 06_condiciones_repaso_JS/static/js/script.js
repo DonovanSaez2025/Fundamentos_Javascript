@@ -44,9 +44,9 @@ function verificarContrasena() {
 
     // Condicional IF-Else para comprobar si la contraseña es correcta o incorrecta.
     if (contrasenaIngresada === contrasena) {
-        alert("Acceso permitido");
+        alert("Acceso permitido.");
     } else {
-        alert("Acceso denegado");
+        alert("Acceso denegado.");
     };
 }
 
@@ -85,13 +85,13 @@ function compararNumeros() {
 
     // Condicional IF-Else IF-Else para verificar los números en cada caso
     if (num1 == num2) {
-        alert(`${num1} y ${num2} son números iguales`);
+        alert(`${num1} y ${num2} son números iguales.`);
     } else if (num1 > num2) {
-        alert(`${num1} es mayor que ${num2}`);
+        alert(`${num1} es mayor que ${num2}.`);
     } else if (num1 < num2) {
-        alert(`${num1} es menor que ${num2}`);
+        alert(`${num1} es menor que ${num2}.`);
     } else {
-        alert("Ingrese números válidos");
+        alert("Ingrese números válidos.");
     };
 }
 
@@ -109,10 +109,116 @@ function parImpar() {
 
     // Condicional IF-Else IF-Else para verificar si el número es par o impar
     if (num % 2 == 0) {
-        alert(`El número ${num} es un número par`);
+        alert(`El número ${num} es un número par.`);
     } else if (num % 2 != 0) {
-        alert(`El número ${num} es un número impar`);
+        alert(`El número ${num} es un número impar.`);
     } else {
-        alert("Ingrese un número válido");
+        alert("Ingrese un número válido.");
     };
+}
+
+// 06. Revisar letra inicial
+/* Pide una palabra.
+- Si empieza con la letra “A” o “a” → “Empieza con A”.
+- Si no → “No empieza con A”.
+*/
+
+// Función sin parámetros que revisa cuál letra es la inicial
+function letraInicial() {
+    // Variable que guardará la palabra ingresada
+    let palabra = prompt("Escribe una palabra: ");
+
+    // Condicional IF-Else IF-Else que verifica si la primera letra es la A
+    if (palabra[0].toLowerCase() == "a") {
+        alert(`La palabra ${palabra} empieza con la letra a.`);
+    } else {
+        alert(`La palabra ${palabra} no empieza con A.`);
+    };
+}
+
+// 07. Temperatura ambiente
+/* Pide una temperatura.
+- Si es menor a 10 → “Hace frío”.
+- Si es entre 10 y 25 → “Clima templado”.
+- Si es mayor o igual a 26 → “Hace calor”.
+*/
+
+// Función sin parámetros que comprueba la temperatura del ambiente
+function comprobarTemp() {
+    // Variable que guardará la temperatura ambiente
+    let temperatura = parseInt(prompt("Ingresa la temperatura: "));
+
+    // Condicional IF-Else IF-Else que comprobará la temperatura ambiente
+    if (temperatura < 10) {
+        alert(`Con ${temperatura} hace frío.`);
+    } else if (temperatura >= 10 && temperatura <= 25) {
+        alert(`Con ${temperatura} hace un clima templado.`);
+    } else if (temperatura >= 26) {
+        alert(`Con ${temperatura} hace un calor.`);
+    } else {
+        alert("Ingrese una temperatura válida.");
+    };
+}
+
+// 08. Nombre reconocido
+/* Pide un nombre.
+- Si el nombre es “Dany” → “Hola, profesor 👋”.
+- Si el nombre es “Ely” → “Hola, mamá 🌷”.
+- En cualquier otro caso → “Hola, visitante”.
+*/
+
+// Función sin parámetros que reconocerá el nombre ingresado
+function nombreReconocer() {
+    // Variable que guardará el nombre ingresado
+    let nombre = prompt("Ingresa tu nombre: ");
+
+    // Condicional IF-Else IF-Else que reconocerá el nombre y dará un saludo personalizado
+    if (nombre.toLowerCase() == "dany") {
+        alert("Hola, profesor 👋")
+    } else if (nombre.toLowerCase() == "ely") {
+        alert("Hola, mamá 🌷");
+    } else {
+        alert("Hola, visitante.");
+    };
+}
+
+// 09. Nota de evaluación
+/* Pide una nota entre 1 y 7.
+- Si es 4 o más → “Aprobado”.
+- Si es menor que 4 → “Reprobado”.
+- Si está fuera del rango 1–7 → “Nota inválida”.
+*/
+
+// Función sin parámetros que evaluará la nota ingresada
+function evaluarNota() {
+    // Variable que guardará la nota ingresada
+    let nota = parseFloat(prompt("Ingrese su nota: "));
+
+    // Condicional IF-Else IF-Else que dará un mensaje según el rango de la nota
+    if (nota >= 4) {
+        alert(`Con ${nota} estás aprobado.`);
+    } else if (nota < 4) {
+        alert(`Con ${nota} estás reprobado.`);
+    } else {
+        alert("Ingrese una nota válida.");
+    };
+}
+
+// 10. Verificar si contiene una palabra clave
+/* Pide una frase.
+- Si incluye la palabra “Jesús” (mayúscula o minúscula) → “Tu frase tiene la palabra clave 🙌”.
+- Si no → “No contiene la palabra clave”.
+*/
+
+// Función sin parámetros que verificará que haya una palabra clave en la frase
+function palabraClave() {
+    // Variable que guardará la frase ingresada
+    let frase = prompt("Ingrese una frase: ");
+
+    // Condicional IF-Else IF-Else que verificará que exista la palabra clave en la frase
+    if (frase.toLowerCase().includes("jesús")) {
+        alert(`La frase ${frase} contiene la palabra clave 🙌`)
+    } else {
+        alert(`La frase ${frase} no contiene la palabra clave.`)
+    }
 }
