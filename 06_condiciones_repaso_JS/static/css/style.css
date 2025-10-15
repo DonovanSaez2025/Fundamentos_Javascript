@@ -6,12 +6,18 @@
 }
 
 body {
-    font-family: "Roboto", sans-serif;;
+    font-family: "Roboto", sans-serif;
+    background-color: #042e33;;
     text-align: center;
+    color: #fff;
 }
 
 header {
-    margin-bottom: 3em;
+    margin-bottom: 4vh;
+}
+
+h1 {
+    font-size: 4vw;
 }
 
 .row {
@@ -19,12 +25,28 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1em;
-    margin-bottom: 3em;
+    gap: 2vh;
+    margin-bottom: 5vh;
+}
+
+h2 {
+    font-size: 3vw;
 }
 
 button {
     font-family: "Roboto", sans-serif;
     font-weight: bold;
     cursor: pointer;
+    padding: 0.6vw;
+    font-size: 2vw;
+    border: 0.2vw solid #000;
+    border-radius: 2vw;
+    background-color: #4e0000;
+    color: #fff;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #000081;
+    transition: background-color 0.2s;
 }
