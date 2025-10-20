@@ -1,4 +1,4 @@
-# Fundamentos_Javascript
+# Fundamentos Javascript
 
 **Autor**: donovansaez@liceovvh.cl
 
