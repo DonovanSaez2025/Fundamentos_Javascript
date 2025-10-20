@@ -94,11 +94,11 @@ function encontrarPar() {
     let modulo;
 
     while (count <= limit) {
-        mode = count % 2;
-
-        if (count = 0) {
+        modulo = count % 2;
+        if (modulo == 0) {
             resultado += ` ${count}`;
-        }
+        };
+
         count++
     }
 
