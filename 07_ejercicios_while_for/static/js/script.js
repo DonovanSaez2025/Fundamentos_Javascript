@@ -91,9 +91,10 @@ function encontrarPar() {
     let resultado = "El resultado es: ";
     let count = 1;
     let limit = parseInt(prompt("Ingrese un número límite: "));
+    let modulo;
 
     while (count <= limit) {
-        count % 2;
+        mode = count % 2;
 
         if (count = 0) {
             resultado += ` ${count}`;
