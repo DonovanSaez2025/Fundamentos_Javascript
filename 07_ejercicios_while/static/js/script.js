@@ -19,7 +19,7 @@ function ejecutarWhile() {
 // B. Ejemplo For: Contar del 10 al 1
 // Función sin parámetros que contiene el ejemplo de bucle while
 function ejecutarFor() {
-    let resul = "El resultado es: "
+    let resul = "El resultado es: ";
 
     for (let i = 10; i > 0; i--) {
         resul += ` ${i}`;
@@ -62,7 +62,7 @@ function contadorRev() {
     };
 
     alert(resul);
-}
+};
 
 /* 03. Sumar los n primeros números 
 - Usando un bucle for, calcula la suma de los números n primeros números  muestra el resultado en la consola.
@@ -76,12 +76,12 @@ function sumarNum() {
 
     while (cont <= num) {
         suma += cont;
-        resul += ` + ${cont}`
+        resul += ` + ${cont}`;
         cont++;
     };
 
     alert(`${resul} = ${suma}`);
-}
+};
 
 /* 04. Imprimir múltiplos de 2 del 1 al n (n es el límite de números a encontrar)
 - Escribe un programa que use un bucle for para imprimir los múltiplos de 2 que hay entre 1 y 10 (inclusive).
