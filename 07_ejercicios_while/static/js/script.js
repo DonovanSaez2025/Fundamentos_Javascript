@@ -93,8 +93,7 @@ function encontrarPar() {
     let num = parseInt(prompt("Ingrese un número límite: "));
 
     while (cont <= num) {
-        let modResul = cont % 2;
-        if (modResul == 0) {
+        if (cont % 2 == 0) {
             resul += ` ${cont}`;
         };
         cont++;
