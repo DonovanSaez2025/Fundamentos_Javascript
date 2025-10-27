@@ -92,11 +92,11 @@ function encontrarPar() {
     let cont = 1;
     let num = parseInt(prompt("Ingrese un número límite: "));
 
-    while (cont <= num) {
+    while (cont < num) {
+        cont++;
         if (cont % 2 == 0) {
             resul += ` ${cont}`;
         };
-        cont++;
     };
 
     alert(resul);
