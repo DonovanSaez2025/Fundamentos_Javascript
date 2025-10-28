@@ -22,15 +22,12 @@ function tablasMulti() {
 pares desde 1 hasta n usando un bucle for. */
 function imprimirPares() {
     let num = parseInt(prompt("Ingrese un número:"));
+	let result = "El resultado es: ";
 
-    // Verifica que el valor ingresado sea un número
-    if (isNaN(num)) {
-        alert("Ingrese valores válidos.");
-    } else {
-        // Inicio del bucle for
-        for (let i = 1; i <= 10; i++) {
-            result += `\n${num} x ${i} = ${num * i}`;
-        }
-        alert(result);
-    };
+    // Inicio del bucle for
+    for (let i = 1; i <= 10; i++) {
+        result += ` ${num}`;
+    }
+	
+    alert(result);
 };
