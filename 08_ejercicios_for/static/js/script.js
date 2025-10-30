@@ -22,16 +22,21 @@ function tablasMulti() {
 pares desde 1 hasta n usando un bucle for. */
 function imprimirPares() {
     let num = parseInt(prompt("Ingrese un número:"));
-	let result = "El resultado es: ";
+    let result = "El resultado es: ";
 
-    // Inicio del bucle for
-    for (let i = 1; i <= num; i++) {
-        if (i % 2 == 0) {
-            result += ` ${i}`;
+    // Verifica que el valor ingresado sea un número
+    if (isNaN(num)) {
+        alert("Ingrese valores válidos.");
+    } else {
+        // Inicio del bucle for
+        for (let i = 1; i <= num; i++) {
+            if (i % 2 == 0) {
+                result += ` ${i}`;
+            };
         };
-    };
-	
-    alert(result);
+
+        alert(result);
+    }
 };
 
 // 03. Contar letras de una palabra
@@ -44,8 +49,8 @@ function letrasNum() {
     // Inicio del bucle for
     for (let i = 1; i <= palabra.length; i++) {
         result += ` ${i}`;
-        };
-	
+    };
+
     alert(`${result} letras`);
 };
 
@@ -57,13 +62,17 @@ function factorialCalc() {
     let result = `El factorial de ${num} es: 1 `;
     let factorial = 1;
 
-    // Inicio del bucle for
-    for (let i = 2; i <= num; i++) {
-        result += ` * ${i}`;
-        factorial *= i;
+    if (isNaN(num)) {
+        alert("Ingrese valores válidos.");
+    } else {
+        // Inicio del bucle for
+        for (let i = 2; i <= num; i++) {
+            result += ` * ${i}`;
+            factorial *= i;
         };
-	
-    alert(`${result} = ${factorial}`);
+
+        alert(`${result} = ${factorial}`);
+    }
 };
 
 // 05. Suma de números impares hasta n
@@ -74,13 +83,16 @@ function sumarImpar() {
     let result = "El resultado es: ";
     let suma = 0;
 
-    // Inicio del bucle for
-    for (let i = 1; i <= num; i++) {
+    if (isNaN(num)) {
+        alert("Ingrese valores válidos.");
+    } else {
+        for (let i = 1; i <= num; i++) {
             if (i % 2 != 0) {
                 result += `\n ${suma} + ${i} = ${suma + i}`;
                 suma += i;
             };
         };
-	
-    alert(`${result}`);
+
+        alert(`${result}`);
+    };
 };
