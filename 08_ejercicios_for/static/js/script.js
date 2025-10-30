@@ -54,15 +54,16 @@ function letrasNum() {
 de ese número (n × n-1 × n-2 × … × 1) usando un bucle for.*/
 function factorialCalc() {
     let num = parseInt(prompt("Ingrese un número:"));
-    let result = "El resultado es: ";
+    let result = `El factorial de ${num} es: 1 `;
+    let factorial = 1;
 
     // Inicio del bucle for
-    for (let i = 1; i <= num; i++) {
-        result += `${num} x ${num - 1} x `;
-    
+    for (let i = 2; i <= num; i++) {
+        result += ` * ${i}`;
+        factorial *= i;
         };
 	
-    alert(`${result}`);
+    alert(`${result} = ${factorial}`);
 };
 
 // 05. Suma de números impares hasta n
