@@ -62,6 +62,7 @@ function factorialCalc() {
     let result = `El factorial de ${num} es: 1 `;
     let factorial = 1;
 
+    // Verifica que el valor ingresado sea un número
     if (isNaN(num)) {
         alert("Ingrese valores válidos.");
     } else {
@@ -83,9 +84,11 @@ function sumarImpar() {
     let result = "El resultado es: ";
     let suma = 0;
 
+    // Verifica que el valor ingresado sea un número
     if (isNaN(num)) {
         alert("Ingrese valores válidos.");
     } else {
+        // Inicio del bucle for
         for (let i = 1; i <= num; i++) {
             if (i % 2 != 0) {
                 result += `\n ${suma} + ${i} = ${suma + i}`;
