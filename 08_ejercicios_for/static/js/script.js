@@ -25,9 +25,61 @@ function imprimirPares() {
 	let result = "El resultado es: ";
 
     // Inicio del bucle for
-    for (let i = 1; i <= 10; i++) {
-        result += ` ${num}`;
-    }
+    for (let i = 1; i <= num; i++) {
+        if (i % 2 == 0) {
+            result += ` ${i}`;
+        };
+    };
 	
     alert(result);
+};
+
+// 03. Contar letras de una palabra
+/* Pide una palabra al usuario y muestra cuántas letras tiene 
+usando un bucle for para recorrerla. */
+function letrasNum() {
+    let palabra = prompt("Ingrese un número:");
+    let result = "La palabra tiene:";
+
+    // Inicio del bucle for
+    for (let i = 1; i <= palabra.length; i++) {
+        result += ` ${i}`;
+        };
+	
+    alert(`${result} letras`);
+};
+
+// 04. Calcular factorial
+/* Solicita un número n e imprime el factorial 
+de ese número (n × n-1 × n-2 × … × 1) usando un bucle for.*/
+function factorialCalc() {
+    let num = parseInt(prompt("Ingrese un número:"));
+    let result = "El resultado es: ";
+
+    // Inicio del bucle for
+    for (let i = 1; i <= num; i++) {
+        result += `${num} x ${num - 1} x `;
+    
+        };
+	
+    alert(`${result}`);
+};
+
+// 05. Suma de números impares hasta n
+/* Pide un número n y suma todos los 
+números impares desde 1 hasta n. */
+function sumarImpar() {
+    let num = parseInt(prompt("Ingrese un número:"));
+    let result = "El resultado es: ";
+    let suma = 0;
+
+    // Inicio del bucle for
+    for (let i = 1; i <= num; i++) {
+            if (i % 2 != 0) {
+                result += `\n ${suma} + ${i} = ${suma + i}`;
+                suma += i;
+            };
+        };
+	
+    alert(`${result}`);
 };
