@@ -59,7 +59,7 @@ function letrasNum() {
 de ese número (n × n-1 × n-2 × … × 1) usando un bucle for.*/
 function factorialCalc() {
     let num = parseInt(prompt("Ingrese un número:"));
-    let result = `El factorial de ${num} es: 1 `;
+    let result = `El factorial de ${num} es: 1`;
     let factorial = 1;
 
     // Verifica que el valor ingresado sea un número
@@ -68,7 +68,7 @@ function factorialCalc() {
     } else {
         // Inicio del bucle for
         for (let i = 2; i <= num; i++) {
-            result += ` * ${i}`;
+            result += ` x ${i}`;
             factorial *= i;
         };
 
