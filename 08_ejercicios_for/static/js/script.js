@@ -94,7 +94,6 @@ function sumarImpar() {
                 result += ` \n ${suma} + ${i} = ${suma + i}`;
                 suma += i;
             };
-            console.log(`num: ${num} result: ${result} suma: ${suma} i: ${i}`)
         };
 
         alert(`${result}`);
