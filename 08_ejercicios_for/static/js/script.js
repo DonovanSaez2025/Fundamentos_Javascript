@@ -81,7 +81,7 @@ function factorialCalc() {
 números impares desde 1 hasta n. */
 function sumarImpar() {
     let num = parseInt(prompt("Ingrese un número:"));
-    let result = "El resultado es: ";
+    let result = "El resultado es:";
     let suma = 0;
 
     // Verifica que el valor ingresado sea un número
@@ -91,9 +91,10 @@ function sumarImpar() {
         // Inicio del bucle for
         for (let i = 1; i <= num; i++) {
             if (i % 2 != 0) {
-                result += `\n ${suma} + ${i} = ${suma + i}`;
+                result += ` \n ${suma} + ${i} = ${suma + i}`;
                 suma += i;
             };
+            console.log(`num: ${num} result: ${result} suma: ${suma} i: ${i}`)
         };
 
         alert(`${result}`);
