@@ -22,7 +22,7 @@ function tablasMulti() {
 pares desde 1 hasta n usando un bucle for. */
 function imprimirPares() {
     let num = parseInt(prompt("Ingrese un número:"));
-    let result = "El resultado es: ";
+    let result = "El resultado es:";
 
     // Verifica que el valor ingresado sea un número
     if (isNaN(num)) {
