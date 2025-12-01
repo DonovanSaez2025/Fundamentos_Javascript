@@ -27,3 +27,12 @@ function sumarMatrizTres() {
     alert(`${datos[0]}\n${datos[1][0]},${datos[1][1]},[${datos[1][2][0]},${datos[1][2][1]},[${datos[1][2][2]}]]\nSuma de los valores en la posición [1][2][1] y [1][2][2][1]: ${datos[1][2][1]} + ${datos[1][2][2][1]} = ${datos[1][2][1] + datos[1][2][2][1]}`);
 };
 
+function fraseArrayMatriz() {
+    let sujeto = ["El perro", "El gato"];
+    let acciones = [
+        ["ladra", "corre"],
+        ["duerme", "salta"]
+    ];
+
+    alert(`${sujeto[0]} ${acciones[0][0]} y ${acciones[0][1]}\n${sujeto[1]} ${acciones[1][0]} y ${acciones[1][1]}`);
+};
