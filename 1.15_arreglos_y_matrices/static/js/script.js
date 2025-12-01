@@ -1,13 +1,16 @@
+// Ejercicio 01
 function fraseArreglo() {
     let palabras = ["Juan", "corre", "rápidamente", "feliz", "parque"];
     alert(`${palabras[0]} ${palabras[1]} ${palabras[3]} y ${palabras[2]} por el ${palabras[4]}`);
 };
 
+// Ejercicio 02
 function fraseVaria() {
     let datos = [3, "gatos", "negros", "duermen", "tranquilamente"];
     alert(`Los ${datos[0]} ${datos[1]} ${datos[2]} ${datos[3]} muy ${datos[4]}`);
 };
 
+// Ejercicio 03
 function sumarMatriz() {
     let matriz = [
         [10, 20, 30],
@@ -18,6 +21,7 @@ function sumarMatriz() {
     alert(`${matriz[0]}\n${matriz[1]}\n${matriz[2]}\nSuma de los valores en la posición [0][2] y [2][1]: ${matriz[0][2]} + ${matriz[2][1]} = ${matriz[0][2] + matriz[2][1]}`);
 };
 
+// Ejercicio 04
 function sumarMatrizTres() {
     let datos = [
         [1, 2, 3, 4],
@@ -27,6 +31,7 @@ function sumarMatrizTres() {
     alert(`${datos[0]}\n${datos[1][0]},${datos[1][1]},[${datos[1][2][0]},${datos[1][2][1]},[${datos[1][2][2]}]]\nSuma de los valores en la posición [1][2][1] y [1][2][2][1]: ${datos[1][2][1]} + ${datos[1][2][2][1]} = ${datos[1][2][1] + datos[1][2][2][1]}`);
 };
 
+// Ejercicio 05
 function fraseArrayMatriz() {
     let sujeto = ["El perro", "El gato"];
     let acciones = [
