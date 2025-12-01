@@ -7,7 +7,7 @@ function fraseArreglo() {
 // Ejercicio 02
 function fraseVaria() {
     let datos = [3, "gatos", "negros", "duermen", "tranquilamente"];
-    alert(`Los ${datos[0]} ${datos[1]} ${datos[2]} ${datos[3]} muy ${datos[4]}`);
+    alert(`De los 5 ${datos[1]} ${datos[2]}, ${datos[0]} ${datos[3]} muy ${datos[4]}`);
 };
 
 // Ejercicio 03
